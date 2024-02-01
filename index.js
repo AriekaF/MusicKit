@@ -1,3 +1,4 @@
+//alert("hey");
 for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
   document.querySelectorAll(".drum")[i].addEventListener("click", function() {
@@ -10,7 +11,7 @@ for (var i = 0; i < document.querySelectorAll(".drum").length; i++) {
 
 }
 
-document.addEventListener("keypress", function(event) {
+document.addEventListener("keydown", function(event) {
 
   makeSound(event.key);
 
@@ -18,7 +19,7 @@ document.addEventListener("keypress", function(event) {
 
 });
 
-
+//functions
 function makeSound(key) {
 
   switch (key) {
